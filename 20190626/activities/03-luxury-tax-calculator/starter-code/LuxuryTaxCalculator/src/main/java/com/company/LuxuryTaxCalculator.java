@@ -22,6 +22,7 @@ public class LuxuryTaxCalculator {
         scan.close();
 
         int sum = playerOne+playerTwo+playerThree;
+        System.out.format("The total salaries is $ %d.%n", sum);
 
         int spendingLimit = 40000000;
 
