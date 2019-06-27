@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25bccb30-c1ca-45a7-a906-dbf93c6924cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LuxuryTaxCalculator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/LuxuryTaxCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/LuxuryTaxCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../01-rectangular-paving-company/starter-code/RectPavingCompany/target/classes/com/company/RectPavingCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../01-rectangular-paving-company/starter-code/RectPavingCompany/target/classes/com/company/RectPavingCompany.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../01-rectangular-paving-company/starter-code/RectPavingCompany/target/test-classes/com/company/RectPavingCompanyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../01-rectangular-paving-company/starter-code/RectPavingCompany/target/test-classes/com/company/RectPavingCompanyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../02-registration-form/starter-code/CommandLineGram/target/classes/com/company/CommandLineGram.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02-registration-form/starter-code/CommandLineGram/target/classes/com/company/CommandLineGram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../02-registration-form/starter-code/CommandLineGram/target/test-classes/com/company/CommandLineGramTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02-registration-form/starter-code/CommandLineGram/target/test-classes/com/company/CommandLineGramTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/LuxuryTaxCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/LuxuryTaxCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/LuxuryTaxCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/LuxuryTaxCalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../in-class/debuggingpractice/target/classes/com/company/DebuggingPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../in-class/debuggingpractice/target/classes/com/company/DebuggingPractice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AddFive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AddFive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AddFiveAndDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AddFiveAndDouble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AddThirteen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AddThirteen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AverageThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/AverageThree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/DoubleAndAddFive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/DoubleAndAddFive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/MultiplyThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/MultiplyThree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/SubtractTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/classes/com/company/SubtractTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AddFiveAndDoubleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AddFiveAndDoubleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AddFiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AddFiveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AddThirteenTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AddThirteenTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AllKatasTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AllKatasTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AverageThreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/AverageThreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/DoubleAndAddFiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/DoubleAndAddFiveTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/MultiplyThreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/MultiplyThreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/SubtractTwoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../katas/starter-code/U1M1L2Katas/target/test-classes/com/company/SubtractTwoTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,13 +33,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/LuxuryTaxCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="379">
               <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/company/LuxuryTaxCalculatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -37,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="50" />
     <option name="y" value="43" />
     <option name="width" value="1370" />
@@ -83,6 +115,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LuxuryTaxCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuxuryTaxCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuxuryTaxCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuxuryTaxCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LuxuryTaxCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LuxuryTaxCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -91,6 +144,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -140,23 +194,28 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="LuxuryTaxCalculatorTest - 2019.06.26 at 08h 52m 50s.xml">
+      <configuration name="LuxuryTaxCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="50" y="43" width="1370" height="763" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18825302" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18825302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32935917" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -176,6 +235,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/company/LuxuryTaxCalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
