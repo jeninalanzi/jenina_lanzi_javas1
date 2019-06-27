@@ -16,7 +16,26 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/test/java/com/company/LoanCalculatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -31,13 +50,13 @@
         <option value="$PROJECT_DIR$/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/FavoriteProgrammingLanguage.java" />
         <option value="$PROJECT_DIR$/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/RangeChecker.java" />
         <option value="$PROJECT_DIR$/activities/03-Fizz-Buzz/starter-code/FizzBuzz/src/main/java/com/company/FizzBuzz.java" />
-        <option value="$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java" />
         <option value="$PROJECT_DIR$/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/YourAgeCan.java" />
         <option value="$PROJECT_DIR$/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/AgeAgain.java" />
+        <option value="$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="141" />
     <option name="y" value="24" />
     <option name="width" value="1294" />
@@ -48,6 +67,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -65,13 +85,129 @@
               <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
               <item name="20190627" type="462c0819:PsiDirectoryNode" />
               <item name="activities" type="462c0819:PsiDirectoryNode" />
-              <item name="02-How-many-times-to-7" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="04-Loan-Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="LoanCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="05-Prime-Finder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="katas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="katas" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="20190627" type="b2602c69:ProjectViewProjectNode" />
+              <item name="20190627" type="462c0819:PsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+              <item name="katas" type="462c0819:PsiDirectoryNode" />
+              <item name="starter-code" type="462c0819:PsiDirectoryNode" />
+              <item name="U1M1L3Katas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -90,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AllKatasTest">
+  <component name="RunManager" selected="JUnit.LoanCalculatorTest">
     <configuration name="AgeAgain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.AgeAgain" />
       <module name="U1M1L3Katas" />
@@ -134,8 +270,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YourAgeCanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="U1M1L3Katas" />
+    <configuration name="LoanCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LoanCalculator" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.company.*" />
@@ -143,7 +279,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.YourAgeCanTest" />
+      <option name="MAIN_CLASS_NAME" value="com.company.LoanCalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +303,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoanCalculatorTest" />
         <item itemvalue="JUnit.AllKatasTest" />
         <item itemvalue="JUnit.AgeAgainTest" />
         <item itemvalue="Application.AgeAgain" />
         <item itemvalue="JUnit.YourAgeCanTest.testYourAgeCanOutput" />
-        <item itemvalue="JUnit.YourAgeCanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,18 +325,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="YourAgeCanTest_testYourAgeCanOutput - 2019.06.26 at 22h 57m 17s.xml">
-      <configuration name="YourAgeCanTest.testYourAgeCanOutput" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YourAgeCanTest - 2019.06.26 at 22h 58m 16s.xml">
-      <configuration name="YourAgeCanTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YourAgeCanTest - 2019.06.26 at 22h 59m 13s.xml">
-      <configuration name="YourAgeCanTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="YourAgeCanTest - 2019.06.26 at 23h 08m 13s.xml">
-      <configuration name="YourAgeCanTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="YourAgeCanTest - 2019.06.26 at 23h 10m 14s.xml">
       <configuration name="YourAgeCanTest" configurationId="JUnit" />
     </history-entry>
@@ -219,6 +343,18 @@
     <history-entry file="AllKatasTest - 2019.06.26 at 23h 24m 50s.xml">
       <configuration name="AllKatasTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.06.27 at 08h 33m 24s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.06.27 at 08h 35m 15s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.06.27 at 08h 36m 00s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoanCalculatorTest - 2019.06.27 at 08h 36m 32s.xml">
+      <configuration name="LoanCalculatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,8 +367,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="141" y="24" width="1294" height="801" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20766774" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21086262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -241,12 +378,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34555712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34555712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32863188" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32863188" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32863188" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32863188" />
@@ -404,20 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/test/java/com/company/LoanCalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="64" lean-forward="true" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/activities/katas/starter-code/U1M1L3Katas/src/main/java/com/company/YourAgeCan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
@@ -450,6 +573,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/test/java/com/company/LoanCalculatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activities/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
         </state>
       </provider>
     </entry>
