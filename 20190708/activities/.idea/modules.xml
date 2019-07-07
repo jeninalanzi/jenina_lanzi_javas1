@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/katas/starter-code/U1M2L5Katas/U1M2L5Katas.iml" filepath="$PROJECT_DIR$/katas/starter-code/U1M2L5Katas/U1M2L5Katas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/implementation-userIO-interface/starter-code/UserIO/UserIO.iml" filepath="$PROJECT_DIR$/implementation-userIO-interface/starter-code/UserIO/UserIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/activities.iml" filepath="$PROJECT_DIR$/.idea/activities.iml" />
+    </modules>
+  </component>
+</project>
