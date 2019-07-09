@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/20190709.iml" filepath="$PROJECT_DIR$/.idea/20190709.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-lesson-inheritance/activities/shapes-perimeters/starter-code/ShapesPerimeters/ShapesPerimeters.iml" filepath="$PROJECT_DIR$/07-lesson-inheritance/activities/shapes-perimeters/starter-code/ShapesPerimeters/ShapesPerimeters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-lesson-inheritance/activities/katas/starter-code/U1M2L7Katas/U1M2L7Katas.iml" filepath="$PROJECT_DIR$/07-lesson-inheritance/activities/katas/starter-code/U1M2L7Katas/U1M2L7Katas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-lesson-composition/code/composition/composition.iml" filepath="$PROJECT_DIR$/06-lesson-composition/code/composition/composition.iml" />
+    </modules>
+  </component>
+</project>
