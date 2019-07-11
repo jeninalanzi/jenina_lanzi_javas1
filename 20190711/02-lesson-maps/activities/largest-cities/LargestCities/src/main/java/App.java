@@ -26,8 +26,10 @@ public class App {
 
         // Print key and values to user. Including the state
         Set<Map.Entry<String, City>> allEntries = citiesMap.entrySet();
+
+        // IMPORTANT!! getValue().getName() accesses the Object getter!!!
         for (Map.Entry<String, City> entry : allEntries) {
-            System.out.println("State: " + entry.getKey() + " || " + "City & Population: " + citiesMap.Iterator(entry));
+            System.out.println("State: " + entry.getKey() + " | City: " + entry.getValue().getName() + " | Population: " + entry.getValue().getPopulation());
         }
 
 
