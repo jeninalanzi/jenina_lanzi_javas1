@@ -1,5 +1,6 @@
 package com.company.service;
 
+import com.company.CarApp;
 import com.company.model.Car;
 
 import java.lang.reflect.Array;
@@ -102,25 +103,107 @@ public class Inventory {
             System.out.println(" ");
             System.out.println("Sorry, there is nothing in the inventory right now.");
             System.out.println("Please go back to the menu to add some cars in the inventory. \n");
+            CarApp.promptUser();
         }
     }
 
     public void search() {
         System.out.println("========== SEARCH INVENTORY ==========");
 
-        // Give user a list of options for search criteria.
-        System.out.println("You can search by (select proper integer to choose):");
-        System.out.println("[1] Make");
-        System.out.println("[2] Model");
-        System.out.println("[3] Year");
-        System.out.println("[4] Color");
-        System.out.println("[5] Less Than __ Miles");
+        int userChoice;
 
-        int userChoice = Integer.parseInt(scan.nextLine());
+        try {
+            // Give user a list of options for search criteria.
+            System.out.println("You can search by (select proper integer to choose):");
+            System.out.println("[1] Make");
+            System.out.println("[2] Model");
+            System.out.println("[3] Year");
+            System.out.println("[4] Color");
+            System.out.println("[5] Less Than __ Miles");
 
-        // Create switch statement
+            userChoice = Integer.parseInt(scan.nextLine());
+
+            String userSelect;
+
+            switch (userChoice) {
+                case 1:
+                    System.out.print("Search by MAKE: ");
+                    userSelect = scan.nextLine();
+                    filteredSearch(userSelect);
+                    break;
+                case 2:
+                    System.out.print("Search by MODEL: ");
+                    userSelect = scan.nextLine();
+                    filteredSearch(userSelect);
+                    break;
+                case 3:
+                    System.out.print("Search by YEAR: ");
+                    int userYrSelect = Integer.parseInt(scan.nextLine());
+                    filteredSearch(userYrSelect);
+                    break;
+                case 4:
+                    System.out.print("Search by COLOR: ");
+                    userSelect = scan.nextLine();
+                    filteredSearch(userSelect);
+                    break;
+                case 5:
+                    System.out.println("Search: Find all Cars that have driven less than __ miles (int only): ");
+                    int userMilesInput = Integer.parseInt(scan.nextLine());
+                    searchByMileage(userMilesInput);
+                    break;
+                default:
+                    System.out.println("ERROR: You have entered an invalid input");
+                    userChoice = CarApp.promptUser();
+
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("ERROR: That is not a valid number input");
+        } finally {
+            userChoice = CarApp.promptUser();
+        }
 
     }
+
+    // Filtered search overloaded methods to reuse in search method.
+    public void filteredSearch(String userInput) {
+        carInventory
+                .stream()
+                .filter(c -> c.getMake().equals(userInput))
+                .forEach(c -> {
+                    System.out.println("Year: " + c.getYear());
+                    System.out.println("Make: " + c.getMake());
+                    System.out.println("Model: " + c.getModel());
+                    System.out.println("Color: " + c.getColor());
+                    System.out.println("Miles on odometer: " + c.getOdometerValue());
+                });
+    }
+
+    public void filteredSearch(int userInput) {
+        carInventory
+                .stream()
+                .filter(c -> c.getMake().equals(userInput))
+                .forEach(c -> {
+                    System.out.println("Year: " + c.getYear());
+                    System.out.println("Make: " + c.getMake());
+                    System.out.println("Model: " + c.getModel());
+                    System.out.println("Color: " + c.getColor());
+                    System.out.println("Miles on odometer: " + c.getOdometerValue());
+                });
+    }
+
+    public void searchByMileage(int userMilesInput) {
+        carInventory
+                .stream()
+                .filter(c -> c.getOdometerValue() < userMilesInput)
+                .forEach(c -> {
+                    System.out.println("Year: " + c.getYear());
+                    System.out.println("Make: " + c.getMake());
+                    System.out.println("Model: " + c.getModel());
+                    System.out.println("Color: " + c.getColor());
+                    System.out.println("Miles on odometer: " + c.getOdometerValue());
+                });
+    }
+
 
 
 }

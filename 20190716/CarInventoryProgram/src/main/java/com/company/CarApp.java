@@ -7,6 +7,13 @@ import java.util.Scanner;
 public class CarApp {
 
     public static void main(String[] args) {
+
+    // Instantiate new Inventory object
+    Inventory inventory = new Inventory();
+
+    int userSelection;
+
+    try {
         Scanner scan = new Scanner(System.in);
 
         // WELCOME SCREEN
@@ -15,11 +22,8 @@ public class CarApp {
         System.out.println("               CarInventory Manager!                 ");
         System.out.println("-----------------------------------------------------");
 
-        // Instantiate new Inventory object
-        Inventory inventory = new Inventory();
-
         // Attain user's choice through prompts
-        int userSelection = promptUser();
+        userSelection = promptUser();
 
         // Conditional
         boolean isRunning = true;
@@ -41,7 +45,9 @@ public class CarApp {
                     userSelection = promptUser();
                     break;
                 case 4:
-                    System.out.println("You picked 4");
+                    System.out.println(" ");
+                    inventory.search();
+                    userSelection = promptUser();
                     break;
                 case 5:
                     System.out.println("You picked 5");
@@ -49,6 +55,7 @@ public class CarApp {
                     break;
                 default:
                     System.out.println("That input isn't valid!\n");
+                    userSelection = promptUser();
                     break;
             }
         }
@@ -57,6 +64,11 @@ public class CarApp {
             System.out.println("Thank you for using. Goodbye!");
             System.exit(0);
         }
+    } catch (NumberFormatException e) {
+        System.out.println("ERROR: You have entered an invalid input.");
+    } finally {
+        userSelection = promptUser();
+    }
 
 
     }
