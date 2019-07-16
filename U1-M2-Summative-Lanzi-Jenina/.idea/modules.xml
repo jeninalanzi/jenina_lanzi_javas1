@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConverterInterface/ConverterInterface.iml" filepath="$PROJECT_DIR$/ConverterInterface/ConverterInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IceCreamClassDesign/IceCreamClassDesign.iml" filepath="$PROJECT_DIR$/IceCreamClassDesign/IceCreamClassDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/U1-M2-Summative-Lanzi-Jenina.iml" filepath="$PROJECT_DIR$/.idea/U1-M2-Summative-Lanzi-Jenina.iml" />
+    </modules>
+  </component>
+</project>
