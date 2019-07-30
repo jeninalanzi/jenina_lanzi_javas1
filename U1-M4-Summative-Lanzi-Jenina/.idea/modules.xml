@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/U1-M4-Summative-Lanzi-Jenina.iml" filepath="$PROJECT_DIR$/.idea/U1-M4-Summative-Lanzi-Jenina.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magic-8-ball-api/magic-8-ball-api.iml" filepath="$PROJECT_DIR$/magic-8-ball-api/magic-8-ball-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quote-api/quote-api.iml" filepath="$PROJECT_DIR$/quote-api/quote-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/word-api/word-api.iml" filepath="$PROJECT_DIR$/word-api/word-api.iml" />
+    </modules>
+  </component>
+</project>

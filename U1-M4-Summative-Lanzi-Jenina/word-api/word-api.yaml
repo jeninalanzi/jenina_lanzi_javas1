@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: Word API
+  description: An API that generates the word of the day and its definition.
+  version: 0.0.1
+  
+servers:
+  - url: http://localhost:8080
+    description: Local dev server.
+
+paths:
+  /word:
+    get:
+      summary: Returns a word and definition to the user.
+      responses:
+        '200':
+          description: A word, and definition.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Word'
+                
+components:
+  schemas:
+    Word:
+      properties:
+        quote:
+          type: string
+        author:
+          type: string
+      required: 
+        - word
+        - definition
+
+                  

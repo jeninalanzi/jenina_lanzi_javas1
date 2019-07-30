@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: Quote API
+  description: A random quote generator.
+  version: 0.0.1
+  
+servers:
+  - url: http://localhost:8080
+    description: Local dev server.
+
+paths:
+  /quote:
+    get:
+      summary: Returns a quote to the user
+      responses:
+        '200':
+          description: A quote.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Quote'
+                
+components:
+  schemas:
+    Quote:
+      properties:
+        quote:
+          type: string
+        author:
+          type: string
+      required: 
+        - quote
+        - author
+
+                  
