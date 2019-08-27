@@ -1,0 +1,158 @@
+openapi: 3.0.0
+info:
+  title: Tasker Service
+  description: An application for managing tasks.
+  version: 0.0.1
+  
+servers:
+  - url: http://localhost:7272
+    description: Local dev server.
+    
+paths:
+  # TASKS: This has POST, PUT, GET ALL.
+  /tasks:
+    get:
+      summary: Returns a list of all tasks (as view model, with ads).
+      responses:
+        '200':
+          description: A JSON array of tasks.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TaskViewModel'
+    post:
+      summary: Creates a task.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                description:
+                  type: string
+                createDate:
+                  type: string
+                dueDate:
+                  type: string
+                category:
+                  type: string
+              required:
+                - description
+                - createDate
+                - dueDate
+                - category
+                
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Invalid request syntax
+        '422':
+          description: Incomplete task information. Some required fields missing.
+    put:
+      summary: Updates the entry for the task with the given ID.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+                description:
+                  type: string
+                createDate:
+                  type: string
+                dueDate:
+                  type: string
+                category:
+                  type: string
+              required:
+                - integer
+                - description
+                - createDate
+                - dueDate
+                - category
+      responses:
+        '200':
+          description: Task successfully updated.
+        '422':
+          description: Task ID must match the ID on the task object.
+  
+  # This has GET, DELETE. 
+  /tasks/{id}:
+    get:
+      summary: Returns a task by ID.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: A task object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskViewModel'
+    delete:
+      summary: Deletes the entry for the task with the given ID.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: ID of the task you want to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Task successfully deleted.
+        
+  # Search by category.  
+  /tasks/category/{category}:
+    get:
+      summary: Returns a list of tasks by category.
+      parameters: 
+        - name: category
+          in: path
+          required: true
+          description: Name of the category you want to search by.
+          schema:
+            type: string
+            example: cleaning
+      responses:
+        '200':
+          description: A JSON array of tasks with the same category type.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/TaskViewModel'
+                  
+components:
+  schemas:
+    TaskViewModel:
+      properties:
+        id:
+          type: integer
+        description:
+          type: string
+        createDate:
+          type: string
+        dueDate:
+          type: object
+        category:
+          type: string
+        advertisement:
+          type: string
+  
