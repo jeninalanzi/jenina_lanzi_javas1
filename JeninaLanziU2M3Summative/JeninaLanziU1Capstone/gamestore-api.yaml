@@ -1,0 +1,584 @@
+openapi: 3.0.0
+info:
+  title: Game Store Inventory
+  description: An application that manages the inventory of a game store.
+  version: 0.0.1
+  
+servers:
+  - url: http://localhost:8080
+    description: Local dev server
+  
+paths:
+  # CONSOLES: This has GET ALL and POST.
+  /consoles:
+    get:
+      summary: Returns a list of consoles.
+      responses:
+        '200':
+          description: A JSON array of consoles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Console'
+    post:
+      summary: Creates a console.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Console'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete console information. Some required fields missing.
+  # This has GET, PUT, and DELETE.
+  /consoles/{consoleId}:
+    get:
+      summary: Returns a console by ID.
+      parameters: 
+        - name: consoleId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: A console object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Console'
+    put:
+      summary: Updates the entry for the console with the given ID.
+      parameters: 
+        - name: consoleId
+          in: path
+          required: true
+          description: ID of the console you want to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Console'
+      responses:
+        '200':
+          description: Console successfully updated.
+        '422':
+          description: Console ID must match the ID in the console object.
+    delete:
+      summary: Deletes the entry for the console with the given ID.
+      parameters: 
+        - name: consoleId
+          in: path
+          required: true
+          description: ID of the console you want to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Console successfully deleted.
+  # Search by manufacturer
+  /consoles/manufacturer/{manufacturer}:
+    get:
+      summary: Returns a list of consoles by manufacturer.
+      parameters: 
+        - name: manufacturer
+          in: path
+          required: true
+          description: Name of the manufacturer you want to search by.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A JSON array of consoles with the same manufacturer
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Console'
+  
+  # GAMES: This has GET ALL and POST.
+  /games:
+    get:
+      summary: Returns a list of games.
+      responses:
+        '200':
+          description: A JSON array of games
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Game'
+    post:
+      summary: Creates a game.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Game'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete game information. Some required fields missing.
+  # This has GET, PUT, and DELETE.
+  /games/{gameId}:
+    get:
+      summary: Returns a game by ID.
+      parameters: 
+        - name: gameId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: A game object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+    put:
+      summary: Updates the entry for the game with the given ID.
+      parameters: 
+        - name: gameId
+          in: path
+          required: true
+          description: ID of the game you want to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Game'
+      responses:
+        '200':
+          description: Game successfully updated.
+        '422':
+          description: Game ID must match the ID in the Game object.
+    delete:
+      summary: Deletes the entry for the Game with the given ID.
+      parameters: 
+        - name: gameId
+          in: path
+          required: true
+          description: ID of the game you want to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Game successfully deleted.
+  
+  # Special search parameters:
+  /games/studio/{studio}:
+    get:
+      summary: Returns a list of games by studio.
+      parameters: 
+        - name: studio
+          in: path
+          required: true
+          description: Name of the studio you want to search by.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A JSON array of games with the same studio
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Game'
+  /games/rating/{rating}:
+    get:
+      summary: Returns a list of games by ESRB rating.
+      parameters: 
+        - name: rating
+          in: path
+          required: true
+          description: ESRB rating you want to search by.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A JSON array of games with the same ESRB rating.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Game'
+  /games/title/{title}:
+    get:
+      summary: Returns a list of games by title.
+      parameters: 
+        - name: title
+          in: path
+          required: true
+          description: Title you want to search by.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A JSON array of games with the same title.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Game'
+  
+  # T-SHIRTS: This has GET ALL and POST.
+  /tshirts:
+    get:
+      summary: Returns a list of t-shirts.
+      responses:
+        '200':
+          description: A JSON array of t-shirts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/T-Shirt'
+    post:
+      summary: Creates a t-shirt.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/T-Shirt'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete t-shirt information. Some required fields missing.
+  # This has GET, PUT, and DELETE.
+  /tshirts/{id}:
+    get:
+      summary: Returns a t-shirt by ID.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: A t-shirt object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/T-Shirt'
+    put:
+      summary: Updates the entry for the t-shirt with the given ID.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: ID of the t-shirt you want to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/T-Shirt'
+      responses:
+        '200':
+          description: T-Shirt successfully updated.
+        '422':
+          description: T-shirt ID must match the ID in the T-shirt object.
+    delete:
+      summary: Deletes the entry for the T-shirt with the given ID.
+      parameters: 
+        - name: id
+          in: path
+          required: true
+          description: ID of the t-shirt you want to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: T-shirt successfully deleted.
+          
+  # Special search parameters for T-Shirt:
+  /tshirts/color/{color}:
+    get:
+      summary: Returns a list of tshirts by color.
+      parameters:
+        - name: color
+          in: path
+          required: true
+          description: The color you want to search by.
+          schema:
+            type: string
+            example: blue
+      responses:
+        '200':
+          description: A JSON array of t-shirts with the same color.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/T-Shirt'
+  /tshirts/{size}:
+    get:
+      summary: Returns all T-shirts with the same size.
+      parameters:
+        - name: size
+          in: path
+          required: true
+          description: Color you want to search by.
+          schema:
+            type: string
+            example: XS
+      responses:
+        '200':
+          description: A JSON array of t-shirts with the same size.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/T-Shirt'
+          
+          
+  ### INVOICE GET ALL/POST
+  /invoices:
+    get:
+      summary: Returns a list of invoices.
+      responses:
+        '200':
+          description: A JSON array of invoices
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Invoice'
+    post:
+      summary: Creates an invoice.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Invoice'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete invoice information. Some required fields missing.
+  # GET, PUT, DELETE
+  /invoices/{invoiceId}:
+    get:
+      summary: Returns an invoice by ID.
+      parameters: 
+        - name: invoiceId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: An invoice object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+    put:
+      summary: Updates the entry for the invoice with the given ID.
+      parameters:
+        - name: invoiceId
+          in: path
+          required: true
+          description: ID of the invoice you want to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Invoice'
+      responses:
+        '200':
+          description: Invoice successfully updated.
+        '422':
+          description: Invoice ID must match the ID in the Invoice object.
+    delete:
+      summary: Deletes the entry for the invoice with the given ID.
+      parameters: 
+        - name: invoiceId
+          in: path
+          required: true
+          description: ID of the invoice you want to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Invoice successfully deleted.
+  
+
+components:
+  schemas:
+    Console:
+      properties:
+        console_id:
+          type: integer
+        model:
+          type: string
+        manufacturer:
+          type: string
+        memory_amount:
+          type: string
+        processor:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: integer
+      # All properties are required
+      required:  
+        - console_id
+        - model
+        - manufacturer
+        - memory_amount
+        - processor
+        - price
+        - quantity
+        
+    Game:
+      properties:
+        game_id:
+          type: integer
+        title:
+          type: string
+        esrb_rating:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        studio:
+          type: string
+        quantity:
+          type: integer
+      # All properties are required
+      required:  
+        - game_id
+        - title
+        - esrb_rating
+        - description
+        - price
+        - studio
+        - quantity
+        
+    T-Shirt:
+      properties:
+        t_shirt_id:
+          type: integer
+        size:
+          type: string
+        color:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
+        quantity:
+          type: integer
+      # All properties are required
+      required:
+        - t_shirt_id
+        - size
+        - color
+        - description
+        - price
+        - quantity
+    
+    Invoice:
+      properties:
+        invoice_id:
+          type: integer
+        name:
+          type: string
+        street:
+          type: string 
+        city:
+          type: string
+        state:
+          type: string
+        zipcode:
+          type: string
+        item_type:
+          type: string
+        item_id:
+          type: integer
+        quantity:
+          type: integer
+        subtotal:
+          type: number
+        state_tax_rate:
+          type: number
+        processing_Fee:
+          type: number
+        total:
+          type: number
+      required:
+        - name
+        - street
+        - city
+        - state
+        - zipcode
+        - item_type
+        - item_id
+        - quantity
