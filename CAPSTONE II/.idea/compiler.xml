@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="retail-api" />
+        <module name="product-service" />
+        <module name="eureka-service-registry" />
+        <module name="capstone-config-server" />
+        <module name="invoice-service" />
+        <module name="level-up-service" />
+        <module name="customer-service" />
+        <module name="inventory-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="capstone-config-server" target="1.8" />
+      <module name="customer-service" target="1.8" />
+      <module name="eureka-service-registry" target="1.8" />
+      <module name="inventory-service" target="1.8" />
+      <module name="invoice-service" target="1.8" />
+      <module name="level-up-service" target="1.8" />
+      <module name="product-service" target="1.8" />
+      <module name="retail-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="capstone-config-server" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
+      <module name="eureka-service-registry" options="-parameters" />
+      <module name="inventory-service" options="-parameters" />
+      <module name="invoice-service" options="-parameters" />
+      <module name="level-up-service" options="-parameters" />
+      <module name="product-service" options="-parameters" />
+      <module name="retail-api" options="-parameters" />
+    </option>
+  </component>
+</project>
